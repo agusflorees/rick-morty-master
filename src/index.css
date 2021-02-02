@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #dcdcdc;
+}
+
+.contenedor-pjs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5rem 1rem;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  justify-items: center;
+  animation: entrada 1s ease;
+}
+
+.carta-pj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-pj {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.nombre-pj {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.carta-pj-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt-carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #dcdcdc;
+  font-size: 1.05rem;
+  width: 15rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.especie-pj {
+  margin-top: 1rem;
+}
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
