@@ -3,6 +3,7 @@ import Episodios from "./components/Episodios";
 import Footer from "./components/Footer";
 import Inicio from "./components/Inicio";
 import Personajes from "./components/Personajes/Personajes";
+import Episodios from './components/Episodios/Episodios' ; 
 
 export default App;
 
